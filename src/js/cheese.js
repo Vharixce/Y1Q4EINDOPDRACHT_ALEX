@@ -26,6 +26,6 @@ export class Cheese extends Actor {
             this.vel.x = -100
         }
 
-    }
+    } //kaas
 
 }
