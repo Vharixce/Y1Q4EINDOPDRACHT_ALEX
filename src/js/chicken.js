@@ -1,4 +1,4 @@
-import { Actor, Engine, Vector, Sprite } from "excalibur"
+import { Actor, Engine, Vector, Sprite} from "excalibur"
 import { Resources } from './resources'
 
 export class Chicken extends Actor {
@@ -10,6 +10,8 @@ export class Chicken extends Actor {
         this.sprite = Resources.Bird.toSprite()
         this.graphics.use(this.sprite)
         this.sprite.flipHorizontal = true
+        this.vel = new Vector(100, 0)
+     
     }
 
 }

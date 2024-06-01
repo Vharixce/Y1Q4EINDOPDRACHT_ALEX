@@ -18,7 +18,16 @@ export class Game extends Engine {
         this.add(bg)
 
         Resources.ThemeSong.play(0.4)
+        for(let i=0; i<3; i++){
+
+            this.spawnTree()
+        }
+    }
+    spawnTree(){
+        const tree = new Tree
+        this.add(tree)
     }
 }
+
 
 new Game()
