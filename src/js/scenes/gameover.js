@@ -65,9 +65,12 @@ export class GameOver extends Scene {
     this.add(buttonText);
 
     // scene switch
-    restartButton.on('pointerup', () => {
-  engine.goToScene('startgame', true);
-    });
+  //   restartButton.on('pointerup', () => {
+  // engine.goToScene('startgame', true);
+  //   });
+            restartButton.on('pointerup', () => {
+            engine.goToScene('maingame', true);
+        });
 
     // interactiviteit in button
     restartButton.enableCapturePointer = true;
