@@ -45,7 +45,7 @@ export class StartGame extends Scene {
 
         // ga naar main scene
         startButton.on('pointerup', () => {
-            engine.goToScene('maingame');
+            engine.goToScene('maingame', true);
         });
 
         // interactieve button
