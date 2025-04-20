@@ -11,7 +11,7 @@ export class Maingame extends Scene {
     rat;
     cheeseCount = 0;
     totalCheese = 3; // hoeveel cheese er is
-    treeSpeedIncrement = 0.5; // elke seconden iets sneller
+    treeSpeedIncrement = 1; // elke seconden iets sneller
   
     treeSpeed = 0.5; // Initial tree speed
 
@@ -21,7 +21,7 @@ export class Maingame extends Scene {
         // timer voor accelleratie van trees
         const speedIncreaseTimer = new Timer({
             fcn: () => this.increaseTreeSpeed(),
-            interval: 2500,
+            interval: 5000,
             repeats: true
         });
 
