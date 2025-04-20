@@ -11,7 +11,7 @@ export class Maingame extends Scene {
     rat;
     cheeseCount = 0;
     totalCheese = 3; // hoeveel cheese er is
-    treeSpeedIncrement = 1; // elke seconden iets sneller
+    treeSpeedIncrement = 0.5; // elke seconden iets sneller
   
     treeSpeed = 0.5; // Initial tree speed
 
