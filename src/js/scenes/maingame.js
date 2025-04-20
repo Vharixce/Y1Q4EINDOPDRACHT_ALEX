@@ -13,7 +13,7 @@ export class Maingame extends Scene {
     totalCheese = 3; // hoeveel cheese er is
     treeSpeedIncrement = 1; // elke seconden iets sneller
   
-    treeSpeed = 0.5; // Initial tree speed
+    treeSpeed = 1; // Initial tree speed
 
     onInitialize(engine) {
         this.startGame(engine);
